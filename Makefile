@@ -105,7 +105,8 @@ CSTANDARD = -std=gnu99
 
 
 # Place -D or -U options here
-CDEFS = -DF_CPU=$(F_CPU)UL
+# CDEFS = -DF_CPU=$(F_CPU)UL
+CDEFS = -DF_CPU=$(F_CPU)UL -DBAUDRATE=57600 -DUART_BAUDRATE_DOUBLE_SPEED=0
 
 
 # Place -I options here
